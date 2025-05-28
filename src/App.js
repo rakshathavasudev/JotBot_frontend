@@ -12,7 +12,7 @@ export default function App() {
     setLoading(true);
     setOutput("");
     try {
-      const res = await axios.post("http://localhost:8000/analyze", {
+      const res = await axios.post("https://jotbot-backend.onrender.com/analyze", {
         transcript,
         task,
       });
